@@ -17,10 +17,14 @@ public class Main {
 		 
 	
 			public static void Play(){
-			
-			       
+					boolean s=true;
+			       int col;
+			       int colS=0;
+			       int fil;
+			       int filS=0;
 				Scanner sc1 = new Scanner(System.in);
 				String p1="";
+				boolean w=true;
 				String p2="";
 				imprimir("Welcome,let's play Tic-tac-Force" );
 				imprimir("ingrese el nombre del jugador Sith");
@@ -61,8 +65,10 @@ public class Main {
 			imprimir(" Donde: El primer numero corresponde a las coordenadas de X");
 			imprimir("        El segundo numero corresponde a las coordenadas de Y");
 			if(i%2==0){ 
-			int col=sc1.nextInt();
-			int fil=sc1.nextInt();
+				
+					col=sc1.nextInt();
+					fil=sc1.nextInt();
+					
 			
 			if(col==1){
 				if(fil==1){
@@ -128,7 +134,7 @@ public class Main {
 											   && arreglo3[1]==("X") && arreglo3[2]==("X")) {
 			        	
 						   if(i%2==0){
-						   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
+						   imprimir( p1+" La fuerza es fuerte en ti, Has ganado!");
 						   i=9;}
 						   else{
 						   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
@@ -239,4 +245,5 @@ public class Main {
 					
 			}
 		
+
 
