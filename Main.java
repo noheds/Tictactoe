@@ -60,7 +60,7 @@ public class Main {
 			imprimir("Ingrese las coordenadas de su jugada");
 			imprimir(" Donde: El primer numero corresponde a las coordenadas de X");
 			imprimir("        El segundo numero corresponde a las coordenadas de Y");
-			if(i%2!=0){ 
+			if(i%2==0){ 
 			int col=sc1.nextInt();
 			int fil=sc1.nextInt();
 			
@@ -119,17 +119,26 @@ public class Main {
 			        System.out.println("----------");
 			        System.out.println("  "+arreglo3[0]+" |"+arreglo3[1]+" |"+arreglo3[2]); 	
 			        
-			        if (arreglo1[0]==("X") && arreglo1[1]==("X") && arreglo1[2]==("X") && arreglo2[0]==("X") 
-							   && arreglo2[1]==("X") &&  arreglo2[2]==("X") && arreglo3[0]==("X") 
-							   && arreglo3[1]==("X") && arreglo3[2]==("X") )  {
+			        if (arreglo1[0]==("X") && arreglo2[1]==("X") && arreglo3[2]==("X") || arreglo1[0]==("X") 
+							   && arreglo2[0]==("X") &&  arreglo3[0]==("X") || arreglo1[1]==("X") 
+							   && arreglo2[1]==("X") && arreglo3[1]==("X") || arreglo1[2]==("X") 
+									   && arreglo2[2]==("X") && arreglo3[2]==("X")|| arreglo1[0]==("X") 
+									   && arreglo1[1]==("X") && arreglo1[2]==("X") || arreglo2[0]==("X") 
+									   && arreglo2[1]==("X") && arreglo2[2]==("X") ||arreglo3[0]==("X") 
+											   && arreglo3[1]==("X") && arreglo3[2]==("X")) {
 			        	
 						   if(i%2==0){
-						   imprimir( p2+"La fuerza es fuerte en ti, Has ganado!");
+						   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
 						   i=9;}
 						   else{
-						   imprimir( p2+"La fuerza es fuerte en ti, Has ganado!");
+						   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
 						   i=9;
 						   }}
+			        
+			        
+			        
+						   
+					
 			        
 			     
 			}
@@ -194,15 +203,19 @@ public class Main {
 					        System.out.println("  "+arreglo3[0]+" |"+arreglo3[1]+" |"+arreglo3[2]);
 					        
 					
-					        if (arreglo1[0]==("O") && arreglo1[1]==("O") && arreglo1[2]==("O") && arreglo2[0]==("O") 
-									   && arreglo2[1]==("O") &&  arreglo2[2]==("O") && arreglo3[0]==("O") 
-									   && arreglo3[1]==("O") && arreglo3[2]==("O") )  {
+					        if (arreglo1[0]==("O") && arreglo2[1]==("O") && arreglo3[2]==("O") || arreglo1[0]==("O") 
+									   && arreglo2[0]==("O") &&  arreglo3[0]==("O") || arreglo1[1]==("O") 
+									   && arreglo2[1]==("O") && arreglo3[1]==("O") || arreglo1[2]==("O") 
+											   && arreglo2[2]==("O") && arreglo3[2]==("O")|| arreglo1[0]==("O") 
+											   && arreglo1[1]==("O") && arreglo1[2]==("O") || arreglo2[0]==("O") 
+											   && arreglo2[1]==("O") && arreglo2[2]==("O") ||arreglo3[0]==("O") 
+													   && arreglo3[1]==("O") && arreglo3[2]==("O")){
 					        		
 								   if(i%2==0){
-								   imprimir( p2+"La fuerza es fuerte en ti, Has ganado!");
+								   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
 								   i=9;}
 								   else{
-								   imprimir( p2+"La fuerza es fuerte en ti, Has ganado!");
+								   imprimir( p2+" La fuerza es fuerte en ti, Has ganado!");
 								   i=9;
 								   }}
 						   
